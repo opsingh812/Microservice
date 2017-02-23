@@ -1,0 +1,15 @@
+# Handling through Centralized config
+#server:
+#  port: 8094
+  
+spring:
+  application:
+    name: web
+  cloud:
+    config:
+      uri: http://localhost:8888
+
+# Handling through Centralized config
+#zuul:
+#  routes:
+#    userservice: /usersSer/**
