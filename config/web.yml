@@ -1,6 +1,11 @@
 server:
-  port: 8094
+  port: 8097
   
 zuul:
   routes:
-    userservice: /usersSer/**
+    userservice:
+      path: /userService/**
+      url: http://localhost:8091/
+    orderservice:
+      path: /orderService/**
+      url: http://localhost:8096/
